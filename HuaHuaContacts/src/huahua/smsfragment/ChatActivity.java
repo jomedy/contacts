@@ -33,7 +33,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ChatActivity extends Activity implements OnClickListener{
-	//聊天对象人姓名
+
+    	private String name;
+    
+    	//聊天对象人姓名
 	private TextView m_PersonName;
 	//发送信息的按钮
 	private Button m_SendBtn;
