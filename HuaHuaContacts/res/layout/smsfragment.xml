@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+        <LinearLayout 
+        android:id="@+id/top_sms_layout"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#000000"
+    	android:orientation="vertical">
+	    	
+	   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="28dip"
+            android:text="信息"
+            />
+	   
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ListView
+            android:id="@+id/sms_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fadingEdge="none"
+            android:dividerHeight="2dp"
+            android:divider="#FFFFFF" />
+
+        <TextView 
+            android:id="@+id/nosms_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="28dip"
+            android:text="暂无信息"
+            android:visibility="gone"/>        
+    </FrameLayout>
+   
+</LinearLayout>
